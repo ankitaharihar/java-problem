@@ -63,3 +63,17 @@
 //     }
 
 // }
+
+
+//Factorial
+
+public class Main {
+    public static void main(String[]arg){
+        int num = 6;
+        int factorial = 1;
+        for(int i = 1 ; i<=num ; i++){
+            factorial = factorial * i;
+        }
+        System.out.print(factorial);
+    }
+}
