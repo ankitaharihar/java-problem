@@ -43,7 +43,7 @@
 
 
 // fibonacci series
-// public class Fibonacci {
+// public class Main {
 
 //     public static void main(String[] args) {
 
@@ -66,14 +66,29 @@
 
 
 //Factorial
+// public class Main {
+//     public static void main(String[]arg){
+//         int num = 6;
+//         int factorial = 1;
+//         for(int i = 1 ; i<=num ; i++){
+//             factorial = factorial * i;
+//         }
+//         System.out.print(factorial);
+//     }
+// }
 
+
+// Reverce Number
 public class Main {
     public static void main(String[]arg){
-        int num = 6;
-        int factorial = 1;
-        for(int i = 1 ; i<=num ; i++){
-            factorial = factorial * i;
+        int num = 124;
+        int rev = 0;
+        while(num > 0){
+            int digit = num % 10;
+            rev = rev * 10 + digit;
+            num = num / 10;
         }
-        System.out.print(factorial);
+        System.out.print(rev);
     }
 }
+
