@@ -79,16 +79,32 @@
 
 
 // Reverce Number
+// public class Main {
+//     public static void main(String[]arg){
+//         int num = 124;
+//         int rev = 0;
+//         while(num > 0){
+//             int digit = num % 10;
+//             rev = rev * 10 + digit;
+//             num = num / 10;
+//         }
+//         System.out.print(rev);
+//     }
+// }
+
+// GCD
 public class Main {
-    public static void main(String[]arg){
-        int num = 124;
-        int rev = 0;
-        while(num > 0){
-            int digit = num % 10;
-            rev = rev * 10 + digit;
-            num = num / 10;
+    public static void main(String[] args) {
+        int a = 48;
+        int b = 18;
+        int gcd = 1;
+
+        for(int i = 1; i <= Math.min(a, b); i++){
+            if(a % i == 0 && b % i == 0){
+                gcd = i;
+            }
         }
-        System.out.print(rev);
+
+        System.out.println("GCD: " + gcd);
     }
 }
-
